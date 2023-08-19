@@ -1,0 +1,101 @@
+#hero {
+    background-image: url(./../assets/blob.svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        max-width: 900px;
+        width: 100vw;
+
+        .slogant {
+            text-align: center;
+            color: #3b82f6;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            text-align: center;
+            color: var(--1st, #181E4B);
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 60px;
+            letter-spacing: -3.36px;
+        }
+
+        .description {
+            text-align: center;
+            color: #5E6282;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 16px;
+
+
+        }
+    }
+}
+
+.CTA {
+    text-decoration: none;
+    border-radius: 10px;
+    background: #3b82f6;
+    box-shadow: 0px 20px 35px 0px #3370d23b;
+    padding: 16px 32px;
+    color: var(--white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    transition: ease all .3s;
+
+    &:hover {
+        background: #316bc9;
+    }
+}
+
+#call {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    text-decoration: none;
+    border-radius: 21.5px;
+    background: #3b82f6;
+    box-shadow: 0px 20px 35px 0px #3370d23b;
+    padding: 8px 16px;
+    color: var(--white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    transition: ease all .3s;
+
+    &:hover {
+        background: #316bc9;
+    }
+}
+
+#hs-task-created-alert {
+    background-color: #181e4b1e;
+}
+
+img.rounded-xl {
+    width: 100%;
+}
