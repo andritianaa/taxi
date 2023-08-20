@@ -10,3 +10,92 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+.bg-blue-700 {
+    background-color: #d7b65d !important;
+}
+
+.text-blue-600 {
+    color: #d7b65d !important;
+}
+
+.bg-darkify {
+    background: #192026 !important;
+}
+
+.CTA {
+    text-decoration: none;
+    border-radius: 10px;
+    background: #d7b65d;
+    box-shadow: 0px 20px 35px 0px #3370d23b;
+    padding: 16px 32px;
+    color: var(--white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    transition: ease all .3s;
+
+    &:hover {
+        background: #a48a43;
+    }
+}
+
+#call {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    text-decoration: none;
+    border-radius: 21.5px;
+    background: #d7b65d;
+    box-shadow: 0px 20px 35px 0px #d7b65d3b;
+    padding: 8px 16px;
+    color: var(--white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    transition: ease all .3s;
+
+    &:hover {
+        background: #316bc9;
+    }
+}
+
+#hs-task-created-alert {
+    background-color: #181e4b1e;
+}
+
+img.rounded-xl {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: serif !important;
+    font-weight: 400;
+}
+
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.marquee {
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
