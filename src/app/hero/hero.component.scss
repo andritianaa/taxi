@@ -2,43 +2,46 @@
     background-image: url(./../../assets/m3.jpg);
     height: 100vh;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    // animation: changeBackground 30s infinite;
+    animation: changeBackground 30s infinite;
 
     @keyframes changeBackground {
 
-        0%,
+        0% {
+            background-image: url(./../../assets/m3.jpg);
+        }
+
+        20% {
+            background-image: url(./../../assets/m3.jpg);
+            /* Deuxième image */
+        }
+
+        30% {
+            background-image: url(./../../assets/m1.webp);
+            /* Deuxième image */
+        }
+
+        60% {
+            background-image: url(./../../assets/m1.webp);
+            /* Deuxième image */
+        }
+
+        70% {
+            background-image: url(./../../assets/m2.jpg);
+            /* Troisième image */
+        }
+
+        90% {
+            background-image: url(./../../assets/m2.jpg);
+            /* Troisième image */
+        }
+
         100% {
             background-image: url(./../../assets/m3.jpg);
-        }
-
-        31% {
-            background-image: url(./../../assets/m3.jpg);
-            /* Deuxième image */
-        }
-
-        33.33% {
-            background-image: url(./../../assets/m1.webp);
-            /* Deuxième image */
-        }
-
-        65% {
-            background-image: url(./../../assets/m1.webp);
-            /* Deuxième image */
-        }
-
-        66.66% {
-            background-image: url(./../../assets/m2.jpg);
-            /* Troisième image */
-        }
-
-        98% {
-            background-image: url(./../../assets/m2.jpg);
-            /* Troisième image */
         }
     }
 

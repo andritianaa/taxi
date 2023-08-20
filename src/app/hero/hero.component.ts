@@ -19,8 +19,8 @@ export class HeroComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     AOS.init({
-      duration: 750,
-      delay: 150,
+      duration: 500,
+      delay: 50,
     })
   }
 
