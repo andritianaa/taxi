@@ -1,12 +1,12 @@
-import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit, Input } from '@angular/core';
 import AOS from 'aos';
 
 @Component({
-  selector: 'app-service',
-  templateUrl: './service.component.html',
-  styleUrls: ['./service.component.scss']
+  selector: 'app-service-dark',
+  templateUrl: './service-dark.component.html',
+  styleUrls: ['./service-dark.component.scss']
 })
-export class ServiceComponent implements OnInit, AfterViewInit {
+export class ServiceDarkComponent implements OnInit, AfterViewInit {
   @Input() title = '';
   @Input() description = '';
   @Input() image = '';

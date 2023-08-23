@@ -19,8 +19,12 @@ body {
     color: #d7b65d !important;
 }
 
-.bg-darkify {
+.bg-nav {
     background: #192026 !important;
+}
+
+.bg-darkify {
+    background: linear-gradient(90deg, rgba(25, 32, 38, 1) 0%, rgba(37, 42, 56, 1) 48%, rgba(43, 55, 65, 1) 100%) !important;
 }
 
 .CTA {

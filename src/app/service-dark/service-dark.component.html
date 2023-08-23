@@ -1,21 +1,12 @@
-<div class="flex justify-center items-center px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <div class="max-w-[85rem]  md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
-        <div class="imageContainer rounded-xl" data-aos="zoom-in-right">
-            <img class="rounded-xl" src={{image}} alt="Image Description">
-            <div (click)="showModal()" class="absolute bookContainer left-0 right-0 p-2 sm:p-4 ">
-                <div class="text-sm font-bold text-gray-800 rounded-lg p-4 md:text-xl book">
-                    {{bookText}}
-                </div>
-            </div>
-        </div>
-
+<div class="flex justify-center items-center bg-darkify px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div class="max-w-[85rem] md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
         <div class="imageContainer rounded-xl" data-aos="zoom-in-left" class="mt-5 sm:mt-10 lg:mt-0">
             <div class="space-y-6 sm:space-y-8">
                 <div class="space-y-2 md:space-y-4">
-                    <h2 class="font-bold text-3xl lg:text-4xl text-gray-800">
+                    <h2 class="font-bold text-3xl lg:text-4xl text-gray-100">
                         {{title}}
                     </h2>
-                    <p class="text-gray-500">
+                    <p class=" text-gray-200">
                         {{description}}
                     </p>
                 </div>
@@ -31,7 +22,7 @@
                                 fill="currentColor" />
                         </svg>
 
-                        <span class="text-sm sm:text-base text-gray-500">
+                        <span class="text-sm sm:text-base text-gray-200 mb-8">
                             24h/24h 7j/7j
                         </span>
                     </li>
@@ -39,12 +30,20 @@
 
             </div>
         </div>
+        <div class="imageContainer  rounded-xl" data-aos="zoom-in-right">
+            <img class="rounded-xl" src={{image}} alt="Image Description">
+            <div (click)="showModal()" class="absolute bookContainer left-0 right-0 p-2 sm:p-4 ">
+                <div class="text-sm font-bold text-gray-800 rounded-lg p-4 md:text-xl book">
+                    {{bookText}}
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
 <div *ngIf="isModal" class="text-center modal" (click)="hideModal()">
-    <div id="hs-task-created-alert"
-        class=" w-full h-screen fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
+    <div id="hs-task-created-alert" class=" w-full h-screen fixed top-0 left-0 z-[60] overflow-x-hidden">
         <div
             class="mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
             <div class="relative flex flex-col bg-white shadow-lg rounded-xl">
@@ -60,7 +59,7 @@
                                 fill="currentColor" />
                         </svg>
                     </button>
-                </div>
+                </div> centre d'interêt
 
                 <div class="p-4 sm:p-10 text-center overflow-y-auto">
                     <span

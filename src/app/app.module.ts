@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ServiceComponent } from './service/service.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ServiceDarkComponent } from './service-dark/service-dark.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     ContactComponent,
     ServiceComponent,
     TestimonialComponent,
-    GalleryComponent
+    GalleryComponent,
+    ServiceDarkComponent
   ],
   imports: [
     BrowserModule,
