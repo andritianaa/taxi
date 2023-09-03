@@ -56,6 +56,7 @@ header {
                     background: #fbc107;
                     height: 42px;
                     width: 150px;
+                    min-width: 70px;
                     color: #202020;
                     display: flex;
                     justify-content: center;
@@ -71,4 +72,67 @@ header {
         }
     }
 
+}
+
+@media screen and (max-width: 380px) {
+    header {
+        height: 173px;
+
+        section {
+            &.top {
+                height: 70px;
+                justify-content: start;
+                flex-direction: column;
+
+                #brand {
+                    height: 43px;
+                    width: 115px;
+                }
+
+                .contact {
+                    align-items: center;
+
+                    a {
+                        padding-left: 0;
+                        font-size: 24px;
+
+                        img {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            &.bottom {
+                background-color: #333533;
+                height: 66px;
+                padding: 0 16px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+
+                a {
+                    color: #fbc107;
+                    margin-left: 16px;
+
+                    &.call {
+                        background: #fbc107;
+                        height: 42px;
+                        width: 150px;
+                        color: #202020;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 500;
+                        transition: ease all .2s;
+
+                        &:hover {
+                            background: #cfcfcf;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }

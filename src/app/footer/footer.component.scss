@@ -17,3 +17,10 @@ footer {
         font-weight: 600;
     }
 }
+
+@media screen and (max-width: 950px) {
+    footer {
+        margin-top: 32px;
+
+    }
+}
