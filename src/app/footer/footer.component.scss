@@ -1,0 +1,19 @@
+footer {
+    margin-top: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+
+    a {
+        color: #202020;
+        background-color: #fbc107;
+        width: 150px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+}

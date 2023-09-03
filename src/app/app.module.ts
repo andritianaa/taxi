@@ -27,6 +27,8 @@ import { SafetyComponent } from './safety/safety.component';
 import { ServicesComponent } from './services/services.component';
 import { ServiceComponent } from './service/service.component';
 import { ServiceDarkComponent } from './service-dark/service-dark.component';
+import { ClientsComponent } from './clients/clients.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ServiceDarkComponent } from './service-dark/service-dark.component';
     SafetyComponent,
     ServicesComponent,
     ServiceComponent,
-    ServiceDarkComponent
+    ServiceDarkComponent,
+    ClientsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

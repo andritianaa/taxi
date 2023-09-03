@@ -43,6 +43,31 @@ header {
         &.bottom {
             background-color: #333533;
             height: 66px;
+            padding: 0 16px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            a {
+                color: #fbc107;
+                margin-left: 32px;
+
+                &.call {
+                    background: #fbc107;
+                    height: 42px;
+                    width: 150px;
+                    color: #202020;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 500;
+                    transition: ease all .2s;
+
+                    &:hover {
+                        background: #cfcfcf;
+                    }
+                }
+            }
         }
     }
 

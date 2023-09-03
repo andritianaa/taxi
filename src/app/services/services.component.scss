@@ -15,17 +15,18 @@
         max-width: 900px;
         width: 100vw;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
 
         .stroke {
             -webkit-text-stroke-color: white;
             stroke: white;
             font-size: 64px;
+            margin-right: 32px;
         }
 
         p {
             color: white;
-            max-width: 460px;
+            max-width: 350px;
         }
     }
 }
