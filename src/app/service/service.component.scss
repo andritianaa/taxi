@@ -28,3 +28,42 @@
         }
     }
 }
+
+@media screen and (max-width: 950px) {
+    .service {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 40px;
+
+        .container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .image {
+                max-width: 480px;
+                width: 100vw;
+                margin-right: 0;
+
+                img {
+                    max-width: 480px;
+                    width: 100vw;
+                }
+            }
+
+
+            p {
+                text-align: center;
+                margin: 0 16px;
+            }
+
+            h1 {
+                text-align: center;
+                margin-top: 32px;
+            }
+
+        }
+    }
+}

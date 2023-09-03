@@ -88,3 +88,44 @@
         }
     }
 }
+
+@media screen and (max-width: 950px) {
+    #safety {
+        .container {
+            justify-content: center;
+
+            .hand {
+                display: none;
+            }
+
+            .right {
+                align-items: center;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #safety {
+        .container {
+            margin: 0;
+
+            .safeMark {
+                display: flex;
+                width: calc(100vw - 47px) !important;
+                justify-content: center !important;
+
+                .safety,
+                .trusted {
+                    width: calc(50vw - 28px) !important;
+                    padding: 8px;
+                }
+
+            }
+        }
+    }
+}
