@@ -1,0 +1,90 @@
+#safety {
+    height: 547px;
+    width: 100vw;
+    background-image: url(./../../assets/background.png);
+    background-size: cover;
+
+    .container {
+        height: 547px;
+        max-width: 960px;
+        width: calc(100vw - 50px);
+        display: flex;
+        justify-content: space-between;
+
+        .hand {
+            width: 432px;
+            height: 547px;
+            display: flex;
+            align-items: flex-end;
+
+            img {
+                width: 432px;
+                height: 447px;
+
+            }
+        }
+
+        .right {
+            max-width: 413px;
+            width: 100vw;
+            display: flex;
+            padding-top: 30px;
+            justify-content: center;
+            flex-direction: column;
+
+            h1.bottom {
+                color: #202020 !important;
+                margin-top: -16px;
+            }
+
+            p {
+                color: #7a7a7a;
+            }
+
+            .safeMark {
+                display: flex;
+                width: 413px;
+                justify-content: space-between;
+
+                .safety,
+                .trusted {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 250px;
+                    height: 183px;
+                    background: #333533;
+                    color: white;
+
+                    h2 {
+                        font-size: 24px;
+                    }
+
+                    p {
+                        text-align: center;
+                        color: #cfcfcf;
+                    }
+
+                    img {
+                        margin-top: 16px;
+                        height: 35px;
+                        width: 35px;
+                        margin-bottom: 16px;
+                    }
+                }
+
+                .trusted {
+                    background-color: #fbc107;
+                    margin-left: 16px;
+                    color: #202020;
+
+                    p {
+                        color: #202020;
+                    }
+                }
+            }
+
+        }
+    }
+}

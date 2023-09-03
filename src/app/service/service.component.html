@@ -1,61 +1,11 @@
-<div class="flex justify-center items-center px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <div class="max-w-[85rem]  md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
-        <div class="imageContainer rounded-xl" data-aos="zoom-in-right">
-            <img class="rounded-xl" src={{image}} alt="Image Description">
-            <div (click)="showModal()" class="absolute bookContainer left-0 right-0 p-2 sm:p-4 ">
-                <div class="text-sm font-bold text-gray-800 rounded-lg p-4 md:text-xl book">
-                    {{bookText}}
-                </div>
-            </div>
+<section class="service">
+    <div class="container">
+        <div class="image">
+            <img [src]="image" alt="">
         </div>
-
-        <div class="imageContainer rounded-xl" data-aos="zoom-in-left" class="mt-5 sm:mt-10 lg:mt-0">
-            <div class="space-y-6 sm:space-y-8">
-                <div class="space-y-2 md:space-y-4">
-                    <h2 class="font-bold text-3xl lg:text-4xl text-gray-800">
-                        {{title}}
-                    </h2>
-                    <p class="text-gray-500">
-                        {{description}}
-                    </p>
-                </div>
-                <ul role="list" class="space-y-2 sm:space-y-4">
-                    <li class="flex space-x-3">
-                        <span class="text-sm sm:text-base text-gray-500">24h/24h 7j/7j</span>
-                    </li>
-                </ul>
-
-            </div>
+        <div class="description">
+            <h1 class="black">{{title}}</h1>
+            <p>{{description}}</p>
         </div>
     </div>
-</div>
-
-<div *ngIf="isModal" class="text-center modal" (click)="hideModal()">
-    <div id="hs-task-created-alert"
-        class=" w-full h-screen fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
-        <div
-            class="mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
-            <div class="relative flex flex-col bg-white shadow-lg rounded-xl">
-                <div class="absolute top-2 right-2">
-                    <button type="button"
-                        class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition-all text-sm"
-                        data-hs-overlay="#hs-task-created-alert">
-                        <span class="sr-only">Close</span>
-                        <img class="w-3.5 h-3.5" src="./../../assets/icons/close.svg" alt="">
-                    </button>
-                </div>
-                <div class="p-4 sm:p-10 text-center overflow-y-auto">
-                    <h3 class="mb-2 text-xl font-bold text-gray-800">Réservez votre taxi</h3>
-                    <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, in iusto aliquam repellat
-                        nisi itaque!
-                    </p>
-                    <br>
-                    <a href="tel:+33467154685" class="text-3xl font-bold text-gray-800 sm:text-4xl CTA">
-                        +33 4 67 15 46 85
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+</section>

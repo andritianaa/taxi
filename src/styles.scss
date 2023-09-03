@@ -1,105 +1,34 @@
-*,
-body {
+@import url('https://kitpro.site/kitaxi/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif !important;
-    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+.black {
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 body {
     overflow-x: hidden;
-    overflow-y: auto;
+    width: 100vw;
 }
 
-.bg-blue-700 {
-    background-color: #d7b65d !important;
-}
+/* Importing Bootstrap SCSS file. */
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/regular.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
 
-.text-blue-600 {
-    color: #d7b65d !important;
-}
+@import 'mdb-angular-ui-kit/assets/scss/mdb.scss';
 
-.bg-nav {
-    background: #192026 !important;
-}
 
-.bg-darkify {
-    background: linear-gradient(90deg, rgba(25, 32, 38, 1) 0%, rgba(37, 42, 56, 1) 48%, rgba(43, 55, 65, 1) 100%) !important;
-}
-
-.CTA {
-    text-decoration: none;
-    border-radius: 10px;
-    background: #d7b65d;
-    box-shadow: 0px 20px 35px 0px #3370d23b;
-    padding: 16px 32px;
-    color: var(--white, #FFF);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    transition: ease all .3s;
-
-    &:hover {
-        background: #a48a43;
-    }
-}
-
-#call {
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-    text-decoration: none;
-    border-radius: 21.5px;
-    background: #d7b65d;
-    box-shadow: 0px 20px 35px 0px #d7b65d3b;
-    padding: 8px 16px;
-    color: var(--white, #FFF);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    transition: ease all .3s;
-
-    &:hover {
-        background: #316bc9;
-    }
-}
-
-#hs-task-created-alert {
-    background-color: #181e4b1e;
-}
-
-img.rounded-xl {
-    width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: serif !important;
-    font-weight: 400;
-}
-
-.marquee-container {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-}
-
-.marquee {
-    white-space: nowrap;
-    animation: marquee 20s linear infinite;
-}
-
-@keyframes marquee {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
+.stroke {
+    color: #02010100;
+    -webkit-text-stroke-width: 1.5px !important;
+    stroke-width: 1.5px !important;
+    -webkit-text-stroke-color: #202020;
+    stroke: #202020;
 }

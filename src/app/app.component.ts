@@ -1,31 +1,10 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
-import AOS from "aos";
+import { Component } from '@angular/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, AfterViewInit {
+export class AppComponent {
   title = 'taxi';
-  isModal = false
-  showModal(): void {
-    this.isModal = true
-  }
-  hideModal(): void {
-    this.isModal = false
-  }
-
-
-  ngOnInit(): void {
-    AOS.init({
-      duration: 500,
-      delay: 50,
-    })
-  }
-
-  ngAfterViewInit(): void {
-    setTimeout(() => {
-      AOS.refresh()
-    }, 500)
-  }
 }
