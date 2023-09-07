@@ -4,7 +4,6 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 120px;
 
     a {
         color: #202020;
@@ -22,5 +21,26 @@ footer {
     footer {
         margin-top: 32px;
 
+    }
+}
+
+.bottom {
+    background-color: #202020;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    color: white;
+    padding: 32px;
+    flex-direction: column;
+
+    h1 {
+        margin-bottom: 0 !important;
+        font-size: 16px !important;
+    }
+
+    p {
+        margin: 0;
     }
 }

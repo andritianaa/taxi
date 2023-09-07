@@ -20,4 +20,13 @@ export class HeroComponent implements OnInit, AfterViewInit {
     }, 500)
   }
 
+
+  isModal = false
+  showModal(): void {
+    this.isModal = true
+  }
+  hideModal(): void {
+    this.isModal = false
+  }
+
 }

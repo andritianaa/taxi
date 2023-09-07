@@ -7,8 +7,18 @@
             pulvinar
             dapibus leo.</P>
         <div class="buttons" data-aos="zoom-in">
-            <a href="#" id="learnMore">Learn More</a>
+            <a href="#" id="learnMore" (click)="showModal()">Learn More</a>
             <a href="#" id="play"><img src="./../../assets/icons/play.svg" alt=""></a>
         </div>
     </div>
 </section>
+
+
+<div *ngIf="isModal" class="modal" (click)="hideModal()">
+    <div class="contentModal">
+        <h1 class="black">Lorem ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium saepe neque ea iusto, illo porro pariatur
+            impedit quo facilis dolorem dolorum sed provident quisquam error similique earum. Impedit, ut? Nisi.</p>
+        <a href="tel:+33467153685" class="call">Appeler</a>
+    </div>
+</div>

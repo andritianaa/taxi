@@ -20,6 +20,13 @@
                 width: 480px;
                 height: 300px;
                 object-fit: cover;
+                transition: ease all .3s;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
             }
         }
 
